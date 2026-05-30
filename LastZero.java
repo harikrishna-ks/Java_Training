@@ -15,21 +15,21 @@ public class LastZero {
         //     index++;
         // }
         // System.out.print(Arrays.toString(arr));
-        int n=5;
-        char arr[]=new char[n];
-        char a[]=new char[n];
-        int j=0;
-        for(int i=0;i<arr.length;i++){
-            if(Character.isDigit(arr[i])){
-                a[j]=arr[i];
-                j++;
+        //ip {a,1,b,2,c,3}
+        //op {1,2,3,a,b,c}
+            int arr[]={1,0,2,0,3,0};
+            int index=0;
+            for(int i=0;i<arr.length;i++){
+                if(arr[i]!=0){
+                    arr[index]=arr[i];
+                    index++;
+                }
             }
-            else if(Character.isLetter(arr[i])){
-                a[j]=arr[i];
-                j++;
+            for(int i=index;i<arr.length;i++){
+                arr[i]=0;
             }
-        }
-        System.out.print(Arrays.toString(a));
+            System.out.println(Arrays.toString(arr));
+
     }
 }
 
