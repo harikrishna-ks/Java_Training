@@ -13,9 +13,9 @@ public class ArrayMult {
             }
         }
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < 10; j++) {
+            for (int j = 0; j < n; j++) {
                 int sum = 0;
-                for (int k = 0; k < 10; k++) {
+                for (int k = 0; k < n; k++) {
                     sum += arr[i][k] * brr[k][j];
                 }
                 System.out.print(sum + " ");

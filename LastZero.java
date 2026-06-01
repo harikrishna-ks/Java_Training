@@ -17,7 +17,7 @@ public class LastZero {
         // System.out.print(Arrays.toString(arr));
         //ip 
         //op {1,2,3,a,b,c}
-            int arr[]={a,1,b,2,c,3}
+            char arr[]={'a', '1', 'b', '2', 'c', '3'};
             int index=0;
             for(int i=0;i<arr.length;i++){
                 if(arr[i]>='0' && arr[i]<='9'){

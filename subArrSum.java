@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class subArrSum {
     public static void main(String[] args){
